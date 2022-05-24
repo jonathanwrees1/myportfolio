@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jonathan's Portfolio Page</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <p class="navbar-brand mr-auto">Jonathan's Portfolio</p>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#welcome-section">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="welcome-section">
+      <div id="heading-box">
+        <h1 id="heading">Hello World....It's me, Jonathan!</h1>
+      </div>
+      <img
+        class="delay"
+        id="profile-pic"
+        src="images/myprofilepic.JPG"
+        alt="profile-pic"
+      />
+    </section>
+    <section id="projects">
+      <h1 class="sub-heading">Some Of My Projects</h1>
+      <div class="projects-grid">
+        <div class="wrapper">
+          <a
+            href="https://jonathanwrees1.github.io/tribute-site/"
+            target="_blank"
+            class="project-tile"
+          >
+            <img
+              class="project-image"
+              src="images/tribute.png"
+              alt="project-image"
+            />
+            <div class="overlay">
+              <p class="project-description">
+                &lt; Tribute Page that I made with HTML and CSS. Dedicated to
+                the man who made milk safer to drink. /&gt;
+              </p>
+            </div></a
+          >
+          <a
+            class="project-title"
+            href="https://jonathanwrees1.github.io/tribute-site/"
+            target="_blank"
+            >Tribute Site</a
+          >
+        </div>
+
+        <div class="wrapper">
+          <a
+            href="https://jonathanwrees1.github.io/survey-form/"
+            target="_blank"
+            class="project-tile"
+            ><img
+              class="project-image"
+              src="images/survey.png"
+              alt="project-image"
+            />
+            <div class="overlay">
+              <p class="project-description">Gonna Throw in some text</p>
+            </div>
+          </a>
+          <a
+            class="project-title"
+            href="https://jonathanwrees1.github.io/survey-form/"
+            target="_blank"
+            >Survey Form</a
+          >
+        </div>
+
+        <div class="wrapper">
+          <a
+            href="https://codepen.io/jonathanwrees1/full/eYywdbY"
+            target="_blank"
+            class="project-tile"
+            ><img
+              class="project-image"
+              src="images/tech_doc.png"
+              alt="project-image"
+            />
+            <div class="overlay">
+              <p class="project-description">Gonna Throw in some text</p>
+            </div>
+          </a>
+          <a
+            class="project-title"
+            href="https://codepen.io/jonathanwrees1/full/eYywdbY"
+            target="_blank"
+            >Technical Documentation Page</a
+          >
+        </div>
+
+        <div class="wrapper">
+          <a
+            href="https://jonathanwrees1.github.io/javaScript-Pokedex/"
+            target="_blank"
+            class="project-tile"
+            ><img
+              class="project-image"
+              src="images/Pokedex.png"
+              alt="project-image"
+            />
+            <div class="overlay">
+              <p class="project-description">Gonna Throw in some text</p>
+            </div>
+          </a>
+          <a
+            class="project-title"
+            href="https://jonathanwrees1.github.io/javaScript-Pokedex/"
+            target="_blank"
+            >Pokedex</a
+          >
+        </div>
+
+        <div class="wrapper">
+          <a
+            href="https://jonathanwrees1.github.io/simple-checklist/"
+            target="_blank"
+            class="project-tile"
+            ><img
+              class="project-image"
+              src="images/todolist.png"
+              alt="project-image"
+            />
+            <div class="overlay">
+              <p class="project-description">Gonna Throw in some text</p>
+            </div>
+          </a>
+          <a
+            class="project-title"
+            href="https://jonathanwrees1.github.io/simple-checklist/"
+            target="_blank"
+            >To Do List App</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="sub-heading">Let's Connect</h1>
+      <div class="contact-tile">
+        <a
+          href="https://www.linkedin.com/in/jonathan-rees-60134a229/"
+          target="_blank"
+          ><img
+            class="contact-image"
+            src="images/linkedin.png"
+            alt="linkedin-logo"
+          />
+
+          <p class="contact-title">Linkedin</p></a
+        >
+        <a
+          id="profile-link"
+          href="https://github.com/jonathanwrees1"
+          target="_blank"
+          ><img
+            class="contact-image"
+            src="images/github.png"
+            alt="github-logo"
+          />
+          <p class="contact-title">Github</p></a
+        >
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
