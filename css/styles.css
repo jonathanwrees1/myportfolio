@@ -279,6 +279,11 @@ margin-bottom:30px;
   }
 }
 
+@media (max-height:500px) {
+  #welcome-section{
+    height:fit-content;
+  }
+}
 
 @media (max-width: 350px) {
   #projects {
