@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
         <p class="navbar-brand mr-auto">Jonathan's Portfolio</p>
 
@@ -58,6 +58,21 @@
           alt="profile-pic"
         />
       </div>
+      <div id="personal-info">
+        <h2>Jonathan Rees</h2>
+        <h3>Web Developer</h3>
+      </div>
+      <div id="tech-stack">
+        <img class="image-box" src="images/html-logo.png" alt="html-logo" />
+        <img class="image-box" src="images/css-logo.png" alt="css-logo" />
+        <img class="image-box" src="images/js-logo.png" alt="javaScript-logo" />
+        <img
+          class="image-box"
+          src="images/1000px-React-icon.svg.png"
+          alt="react-logo"
+        />
+        <img class="image-box" src="images/node.png" alt="javaScript-logo" />
+      </div>
     </section>
     <section id="projects">
       <div class="heading-box">
@@ -82,12 +97,14 @@
               </p>
             </div></a
           >
-          <a
-            class="project-title"
-            href="https://jonathanwrees1.github.io/tribute-site/"
-            target="_blank"
-            >Tribute Site</a
-          >
+          <div class="title-box">
+            <a
+              class="project-title"
+              href="https://jonathanwrees1.github.io/tribute-site/"
+              target="_blank"
+              >Tribute Site</a
+            >
+          </div>
         </div>
 
         <div class="wrapper">
@@ -101,20 +118,26 @@
               alt="project-image"
             />
             <div class="overlay">
-              <p class="project-description">Gonna Throw in some text</p>
+              <p class="project-description">
+                &lt; Client-Side of a survery form using various submit inputs
+                including buttons, drop-down selectors, and authenticated
+                fields. /&gt;
+              </p>
             </div>
           </a>
-          <a
-            class="project-title"
-            href="https://jonathanwrees1.github.io/survey-form/"
-            target="_blank"
-            >Survey Form</a
-          >
+          <div class="title-box">
+            <a
+              class="project-title"
+              href="https://jonathanwrees1.github.io/survey-form/"
+              target="_blank"
+              >Survey Form</a
+            >
+          </div>
         </div>
 
         <div class="wrapper">
           <a
-            href="https://codepen.io/jonathanwrees1/full/eYywdbY"
+            href="https://jonathanwrees1.github.io/techdoc"
             target="_blank"
             class="project-tile"
             ><img
@@ -123,15 +146,20 @@
               alt="project-image"
             />
             <div class="overlay">
-              <p class="project-description">Gonna Throw in some text</p>
+              <p class="project-description">
+                &lt; Technical Documentation page showcasing a responsive
+                navbar, jump links, and various elements in the text body. /&gt;
+              </p>
             </div>
           </a>
-          <a
-            class="project-title"
-            href="https://codepen.io/jonathanwrees1/full/eYywdbY"
-            target="_blank"
-            >Technical Documentation Page</a
-          >
+          <div class="title-box">
+            <a
+              class="project-title"
+              href="https://jonathanwrees1.github.io/techdoc"
+              target="_blank"
+              >Technical Documentation Page</a
+            >
+          </div>
         </div>
 
         <div class="wrapper">
@@ -145,37 +173,20 @@
               alt="project-image"
             />
             <div class="overlay">
-              <p class="project-description">Gonna Throw in some text</p>
+              <p class="project-description">
+                &lt; "Pokedex" app which pulls data from an external API, and
+                uses dynamically created elements via JavaScript. /&gt;
+              </p>
             </div>
           </a>
-          <a
-            class="project-title"
-            href="https://jonathanwrees1.github.io/javaScript-Pokedex/"
-            target="_blank"
-            >Pokedex</a
-          >
-        </div>
-
-        <div class="wrapper">
-          <a
-            href="https://jonathanwrees1.github.io/simple-checklist/"
-            target="_blank"
-            class="project-tile"
-            ><img
-              class="project-image"
-              src="images/todolist.png"
-              alt="project-image"
-            />
-            <div class="overlay">
-              <p class="project-description">Gonna Throw in some text</p>
-            </div>
-          </a>
-          <a
-            class="project-title"
-            href="https://jonathanwrees1.github.io/simple-checklist/"
-            target="_blank"
-            >To Do List App</a
-          >
+          <div class="title-box">
+            <a
+              class="project-title"
+              href="https://jonathanwrees1.github.io/javaScript-Pokedex/"
+              target="_blank"
+              >Pokedex</a
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -184,7 +195,40 @@
       <div class="heading-box">
         <h1 class="sub-heading">Let's Connect</h1>
       </div>
-      <form>There will be some text here.</form>
+
+      <form id="contact-form">
+        <div class="form-group">
+          <label id="name-label" class="labels" for="name">Name:</label>
+          <input
+            id="name"
+            class="form-control"
+            type="text"
+            placeholder="Enter name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" class="labels" for="email">Email:</label>
+          <input
+            id="email"
+            class="form-control"
+            type="email"
+            placeholder="Enter email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="comments-label" class="labels" for="comments"
+            >Comments:</label
+          >
+          <textarea id="comments" class="form-control" required> </textarea>
+        </div>
+        <div id="form-group-button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
       <div class="contact-tile">
         <a
           href="https://www.linkedin.com/in/jonathan-rees-60134a229/"
