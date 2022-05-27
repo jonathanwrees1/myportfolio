@@ -196,11 +196,16 @@
         <h1 class="sub-heading">Let's Connect</h1>
       </div>
 
-      <form id="contact-form">
+      <form
+        action="https://formsubmit.co/jrees4pcs@gmail.com"
+        method="POST"
+        id="contact-form"
+      >
         <div class="form-group">
           <label id="name-label" class="labels" for="name">Name:</label>
           <input
             id="name"
+            name="name"
             class="form-control"
             type="text"
             placeholder="Enter name"
@@ -212,6 +217,7 @@
           <label id="email-label" class="labels" for="email">Email:</label>
           <input
             id="email"
+            name="email"
             class="form-control"
             type="email"
             placeholder="Enter email"
@@ -223,7 +229,8 @@
           <label id="comments-label" class="labels" for="comments"
             >Comments:</label
           >
-          <textarea id="comments" class="form-control" required> </textarea>
+          <textarea id="comments" name="comments" class="form-control" required>
+          </textarea>
         </div>
         <div id="form-group-button">
           <button type="submit">Submit</button>
