@@ -27,7 +27,12 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
 
     <title>Jonathan's Portfolio Page</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -39,7 +44,7 @@
   <body>
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
-        <p class="navbar-brand mr-auto">Jonathan's Portfolio</p>
+        <a class="navbar-brand mr-auto">Jonathan's Portfolio</a>
 
         <button
           class="navbar-toggler"
@@ -82,18 +87,40 @@
       </div>
       <div id="personal-info">
         <h2>Jonathan Rees</h2>
-        <h3>Web Developer</h3>
+        <h4>Web Developer</h4>
       </div>
       <div id="tech-stack">
-        <img class="image-box" src="images/html-logo.png" alt="html-logo" />
-        <img class="image-box" src="images/css-logo.png" alt="css-logo" />
-        <img class="image-box" src="images/js-logo.png" alt="javaScript-logo" />
-        <img
-          class="image-box"
-          src="images/1000px-React-icon.svg.png"
-          alt="react-logo"
-        />
-        <img class="image-box" src="images/node.png" alt="javaScript-logo" />
+        <div class="card" style="width: 18rem">
+          <img
+            src="images/html-logo.png"
+            class="card-img-top"
+            alt="html-logo"
+          />
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img src="images/css-logo.png" class="card-img-top" alt="css-logo" />
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="images/js-logo.png"
+            class="card-img-top"
+            alt="javaScript-logo"
+          />
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="images/1000px-React-icon.svg.png"
+            class="card-img-top"
+            alt="react-logo"
+          />
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img src="images/node.png" class="card-img-top" alt="node-logo" />
+        </div>
       </div>
     </section>
     <section id="projects">
