@@ -3,7 +3,7 @@
   
 *{
 box-sizing: border-box;
-
+border-radius:5px;
 }
 
 
@@ -39,7 +39,7 @@ background-blend-mode: multiply;
 .navbar-brand {
   margin: 0 25px;
   color:lightgray;
-  border-radius: 5px;
+  
   padding:.5em;
 }
 
@@ -52,7 +52,7 @@ background-blend-mode: multiply;
   color:lightgray;
   font-weight: bold;
   margin: 0 25px;
-  border-radius: 5px;
+  
 }
 
 section {
@@ -251,7 +251,7 @@ h1 {
   height: 300px;
   width: 100%;
   border: solid black 1px;
-  border-radius: 5px;
+  
 }
 
 .overlay {
@@ -267,7 +267,7 @@ h1 {
   background-color: gray;
   align-items: center;
   text-align:center;
-  border-radius: 5px;
+  
 }
 
 .project-tile:hover .overlay {
@@ -302,7 +302,7 @@ h1 {
   max-width:600px;
   border: solid black 1px;
   padding: 20px;
-  border-radius: 5px;
+  
 }
 
 
