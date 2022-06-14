@@ -1,9 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
   
 *{
 box-sizing: border-box;
 border-radius:5px;
+text-transform:uppercase;
+
+
 }
 
 
@@ -13,7 +16,7 @@ body {
   display: block;
   margin: 0;
   padding: 0;
-  font-family: 'Red Hat Display';
+  font-family: 'Cinzel', serif;
   background-color: rgba(0,0,0,.6);
 background-image:url(../images/mountains.jpg);
 background-size:cover;
@@ -21,6 +24,7 @@ background-position: center;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-blend-mode: multiply;
+
 }
 
 .navbar {
@@ -45,12 +49,12 @@ background-blend-mode: multiply;
 
 
 .navbar-toggler-icon{
-  background-color:lightgray;
+  color:lightgray;
 }
 
 .nav-link {
   color:lightgray;
-  font-weight: bold;
+  
   margin: 0 25px;
   
 }
@@ -182,6 +186,7 @@ h4 {
   line-height: 2em;
   text-indent:30px;
   font-size:large;
+  text-transform:lowercase;
     
   
   
@@ -193,7 +198,7 @@ h4 {
     justify-content: center;
 }
 
-.card-img-top {
+.card-img-top1 {
   width:100%;
   height: 100%;
   max-height:100px;
@@ -219,6 +224,7 @@ a {
 
 a:hover {
   background-color: gray;
+  color:black;
 }
 h1 {
   text-align: center;
@@ -230,7 +236,7 @@ h1 {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   width: 80%;
   max-width: 900px;
   margin: 0 auto;
@@ -250,7 +256,7 @@ h1 {
   z-index: 1;
   height: 300px;
   width: 100%;
-  border: solid black 1px;
+  border: solid black 30px;
   
 }
 
@@ -268,10 +274,11 @@ h1 {
   align-items: center;
   text-align:center;
   
+  
 }
 
 .project-tile:hover .overlay {
-  opacity: 0.96;
+  opacity: 1;
 }
 .project-description {
   text-align:center;
@@ -281,14 +288,16 @@ h1 {
 }
 
 .title-box {
-  margin-top: 10px;
+  margin:20px 0;
 }
 .project-title {
   font-family: inherit;
-  font-weight: bold;
+  border-bottom: solid gray 2px;
+  border-top: solid gray 2px;
   color:lightgray;
   border-radius:5px;
   padding:.5em;
+  
 }
 .project-title:hover{
   color:black;
@@ -345,20 +354,21 @@ button{
     font-size:16px;
     font-family: inherit;
     border-color:#dbe3ec;
-    border-radius:.25rem;
-   
-    background-color:#dbe3ec;
+    border-radius:5px;
+    background:lightgray;
+    
     color:gray; 
     
 
 }
 
 button:hover{
-    opacity:75%;
+    border-color:black;
+    color:black;
 }
 
 button:active{
-    opacity:100%;
+    opacity:50%;
 }
 
 #comments{
@@ -368,20 +378,24 @@ button:active{
 
 
 
-.contact-tile {
+.contact-tile-wrapper {
   display: flex;
   justify-content: center;
   padding-bottom:50px;
 }
+.contact-tile{
+  margin:10px;
+}
 .contact-image {
-  width: 100px;
+  width: 70px;
   height: auto;
-  margin: 10px;
+  margin-bottom:12px;
+  
 }
 .contact-title{
   font-family: inherit;
-  font-weight: bold;
-  color: black;
+  font-size:smaller;
+  
 }
 @media (max-width: 1200px) {
   section {
