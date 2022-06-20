@@ -1,40 +1,34 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-  
-*{
-box-sizing: border-box;
-border-radius:5px;
-text-transform:uppercase;
 
-
+* {
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 
-
-
 body {
-  color:lightgray;
+  color: lightgray;
   display: block;
   margin: 0;
   padding: 0;
   font-family: 'Cinzel', serif;
-  background-color: rgba(0,0,0,.6);
-background-image:url(../images/mountains.jpg);
-background-size:cover;
-background-position: center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-blend-mode: multiply;
-
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../images/mountains.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
 }
 
 .navbar {
   display: flex;
-  
+
   z-index: 100;
   top: 0;
   min-height: 100px;
   max-height: auto;
-  
+
   position: fixed;
   width: 100%;
 
@@ -42,22 +36,26 @@ background-blend-mode: multiply;
 }
 .navbar-brand {
   margin: 0 25px;
-  color:lightgray;
-  
-  padding:.5em;
+  color: lightgray;
+
+  padding: 0.5em;
 }
 
-
-.navbar-toggler-icon{
-  
-  background-color: lightgray;
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 211, 211, 211, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
 .nav-link {
-  color:lightgray;
-  
+  color: lightgray;
+
   margin: 0 25px;
-  
 }
 
 section {
@@ -153,8 +151,6 @@ section {
   justify-content: center;
   width: 80%;
 
-  
-
   line-height: 1.8em;
   margin: 5% auto;
 }
@@ -170,45 +166,36 @@ h4 {
 
   justify-content: space-evenly;
   margin: 2em auto;
-  
+
   width: 80%;
   height: auto;
 }
-.card{
-  margin:.5em;
+.card {
+  margin: 0.5em;
   background-color: transparent;
-  border:none;
-  color:lightgray;
-  max-width:900px;
- 
-  
+  border: none;
+  color: lightgray;
+  max-width: 900px;
 }
-.card p{
+.card p {
   line-height: 2em;
-  text-indent:30px;
-  font-size:large;
-  text-transform:lowercase;
-    
-  
-  
+  text-indent: 30px;
+  font-size: large;
+  text-transform: lowercase;
 }
-.text-wrapper{
-  display:flex;
-    padding:0 3em;
-    margin:0 auto;
-    justify-content: center;
+.text-wrapper {
+  display: flex;
+  padding: 0 3em;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .card-img-top1 {
-  width:100%;
+  width: 100%;
   height: 100%;
-  max-height:100px;
-  max-width:100px;
-  margin:0 auto;
-  
-  
-  
-  
+  max-height: 100px;
+  max-width: 100px;
+  margin: 0 auto;
 }
 
 .sub-heading {
@@ -220,12 +207,12 @@ a {
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  color:lightgray;
+  color: lightgray;
 }
 
 a:hover {
   background-color: gray;
-  color:black;
+  color: black;
 }
 h1 {
   text-align: center;
@@ -250,7 +237,7 @@ h1 {
   display: block;
   justify-content: center;
   position: relative;
-  border-radius:5px;
+  border-radius: 5px;
 }
 
 .project-image {
@@ -258,7 +245,6 @@ h1 {
   height: 300px;
   width: 100%;
   border: solid black 30px;
-  
 }
 
 .overlay {
@@ -273,35 +259,32 @@ h1 {
   transition: 0.5s ease;
   background-color: gray;
   align-items: center;
-  text-align:center;
-  
-  
+  text-align: center;
 }
 
 .project-tile:hover .overlay {
   opacity: 1;
 }
 .project-description {
-  text-align:center;
-  margin:0 auto;
+  text-align: center;
+  margin: 0 auto;
   padding: 0 25px;
   font-size: 19px;
 }
 
 .title-box {
-  margin:20px 0;
+  margin: 20px 0;
 }
 .project-title {
   font-family: inherit;
   border-bottom: solid gray 2px;
   border-top: solid gray 2px;
-  color:lightgray;
-  border-radius:5px;
-  padding:.5em;
-  
+  color: lightgray;
+  border-radius: 5px;
+  padding: 0.5em;
 }
-.project-title:hover{
-  color:black;
+.project-title:hover {
+  color: black;
 }
 
 #contact-form {
@@ -309,94 +292,78 @@ h1 {
   margin: 0 auto 50px;
   height: auto;
   width: 70%;
-  max-width:600px;
+  max-width: 600px;
   border: solid black 1px;
   padding: 20px;
-  
 }
-
-
 
 .form-group {
-  
   margin: 10px auto;
   max-width: 500px;
-  height:auto;
+  height: auto;
   padding: 5px 0;
-  
 }
 
-#form-group-button{
-  display:flex;
-  justify-content: center;  
+#form-group-button {
+  display: flex;
+  justify-content: center;
 }
 
-.form-control{
-    
-    width: 100%;
-    height: 30px;
-    box-sizing: border-box;
-    border: 1px solid ;
-    border-radius:.25rem;
-    border-color:#dbe3ec;
-    
+.form-control {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  border-color: #dbe3ec;
 }
 
-label{
-    display:flex;
-    margin-bottom: 0.5rem;
-    color:gray;
+label {
+  display: flex;
+  margin-bottom: 0.5rem;
+  color: gray;
 }
 
+button {
+  padding: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  border-color: #dbe3ec;
+  border-radius: 5px;
+  background: lightgray;
 
-button{
-    
-    padding:10px;
-    font-size:16px;
-    font-family: inherit;
-    border-color:#dbe3ec;
-    border-radius:5px;
-    background:lightgray;
-    
-    color:gray; 
-    
-
+  color: gray;
 }
 
-button:hover{
-    border-color:black;
-    color:black;
+button:hover {
+  border-color: black;
+  color: black;
 }
 
-button:active{
-    opacity:50%;
+button:active {
+  opacity: 50%;
 }
 
-#comments{
-  height:100px;
+#comments {
+  height: 100px;
 }
-
-
-
 
 .contact-tile-wrapper {
   display: flex;
   justify-content: center;
-  padding-bottom:50px;
+  padding-bottom: 50px;
 }
-.contact-tile{
-  margin:10px;
+.contact-tile {
+  margin: 10px;
 }
 .contact-image {
   width: 70px;
   height: auto;
-  margin-bottom:12px;
-  
+  margin-bottom: 12px;
 }
-.contact-title{
+.contact-title {
   font-family: inherit;
-  font-size:smaller;
-  
+  font-size: smaller;
 }
 @media (max-width: 1200px) {
   section {
