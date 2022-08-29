@@ -21,6 +21,7 @@ body {
   background-blend-mode: multiply;
 }
 
+
 .navbar {
   display: flex;
 
@@ -37,8 +38,11 @@ body {
 .navbar-brand {
   margin: 0 25px;
   color: lightgray;
-
+border-radius:1.5em;
   padding: 0.5em;
+}
+.navbar-brand:hover{
+  background-color: darkgray;
 }
 
 .navbar-toggler-icon {
@@ -54,9 +58,13 @@ body {
 }
 .nav-link {
   color: lightgray;
-
+border-radius:1.5em;
   margin: 0 25px;
 }
+.nav-link:hover{
+  background-color: darkgray;
+}
+
 
 section {
   display: block;
@@ -208,11 +216,13 @@ a {
   cursor: pointer;
   text-align: center;
   color: lightgray;
+  
 }
 
 a:hover {
-  background-color: gray;
+  
   color: black;
+  
 }
 h1 {
   text-align: center;
@@ -296,7 +306,7 @@ h1 {
   height: auto;
   width: 70%;
   max-width: 600px;
-  border: solid black 1px;
+  
   padding: 20px;
 }
 
@@ -317,7 +327,7 @@ h1 {
   height: 30px;
   box-sizing: border-box;
   border: 1px solid;
-  border-radius: 0.25rem;
+  border-radius: 1.5em;
   border-color: #dbe3ec;
 }
 
@@ -330,25 +340,27 @@ label {
 color:lightgray;
 }
 input{
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-transform: none;
+  
 }
+
 
 
 button {
   padding: 10px;
   font-size: 16px;
   font-family: inherit;
-  border-color: #dbe3ec;
-  border-radius: 5px;
+  border-color: transparent;
+  border-radius: 10px;
   background: lightgray;
 
-  color: gray;
+  color:black;
 }
 
 button:hover {
   border-color: black;
-  color: black;
+  
 }
 
 button:active {
@@ -357,6 +369,8 @@ button:active {
 
 #comments {
   height: 100px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: none;
 }
 
 .contact-tile-wrapper {
@@ -375,6 +389,11 @@ button:active {
 .contact-title {
   font-family: inherit;
   font-size: smaller;
+  border-radius:1.5em;
+  padding:.2em;
+}
+.contact-title:hover{
+  background-color:darkgray;
 }
 @media (max-width: 1200px) {
   section {
