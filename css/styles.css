@@ -5,16 +5,16 @@
   border-radius: 5px;
   text-transform: uppercase;
   font-family: 'Cinzel', serif;
-  color:lightgray;
+  color: lightgray;
 }
 
+/* Entire body and background*/
 body::before {
-
-  content:'';
-  position:fixed;
-  left:0;
-  right:0;
-  z-index:-1;
+  content: '';
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
   display: flex;
   background-color: rgba(0, 0, 0, 0.6);
   background-image: url(../images/mountains.jpg);
@@ -22,32 +22,27 @@ body::before {
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 
-
+/* Navigation Bar*/
 .navbar {
-  display: flex;
-
+  display: block;
+  background-color:rgba(0, 0, 0, 0.8);
   z-index: 100;
-  top: 0;
-  min-height: 100px;
-  max-height: auto;
-
   position: fixed;
   width: 100%;
-
-  align-items: center;
+  transition: top 0.6s;
 }
 .navbar-brand {
   margin: 0 25px;
   color: lightgray;
-border-radius:1.5em;
-  padding: 0.5em;
+  border-radius: 1.5em;
+  padding: 15px;
 }
-.navbar-brand:hover{
-  background-color: darkgray;
+.navbar-brand:hover {
+  background-color: gray;
 }
 
 .navbar-toggler-icon {
@@ -57,46 +52,34 @@ border-radius:1.5em;
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    border: none;
-    box-shadow: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
 .nav-link {
   color: lightgray;
-border-radius:1.5em;
+  border-radius: 1.5em;
   margin: 0 25px;
+  padding:15px;
 }
-.nav-link:hover{
-  background-color: darkgray;
-}
-
-
-section {
-  display: block;
-  margin: 0 auto;
-  padding: 0 auto;
-  width: 100%;
-  height: fit-content;
+.nav-link:hover {
+  background-color: gray;
+  
 }
 
+/* Profile pic and welcome heading*/
 #welcome-section {
   display: block;
 
   align-items: center;
   justify-content: center;
 }
-.heading-box {
-  display: flex;
-  text-align: center;
-  background-color: inherit;
-  height: 300px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
+
+
+
 #heading {
   background-color: inherit;
+  
   animation-name: fade-in-h;
   animation-duration: 1.5s;
   position: relative;
@@ -157,6 +140,8 @@ section {
     opacity: 1;
   }
 }
+
+/* Name and Title below profile pic*/
 #personal-info {
   border-top: solid gray;
   border-bottom: solid gray;
@@ -167,35 +152,28 @@ section {
   line-height: 1.8em;
   margin: 5% auto;
 }
-h2 {
-  margin: 3% 0 1.5% 0;
-}
-h4 {
-  margin-bottom: 3%;
-}
 
+/* Icons for tech stack*/
 #tech-stack {
   display: flex;
-
   justify-content: space-evenly;
   margin: 2em auto;
-
   width: 80%;
   height: auto;
 }
-.card {
-  margin: 0.5em;
-  background-color: transparent;
-  border: none;
-  color: lightgray;
-  max-width: 900px;
+
+.tech {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-140px);
+  transition: transform 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-.card p {
-  line-height: 2em;
-  text-indent: 30px;
-  font-size: large;
-  text-transform: lowercase;
+
+.tech:hover {
+  transform: translateZ(-160px) rotateX(-90deg) rotateY(-90deg);
 }
+
+/* My Bio*/
 .text-wrapper {
   display: flex;
   padding: 0 3em;
@@ -203,39 +181,7 @@ h4 {
   justify-content: center;
 }
 
-.card-img-top1 {
-  width: 100%;
-  height: 100%;
-  max-height: 100px;
-  max-width: 100px;
-  margin: 0 auto;
-}
-
-.sub-heading {
-  border-bottom: solid gray 2px;
-  border-top: solid gray 2px;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-  text-align: center;
-  color: lightgray;
-  
-}
-
-a:hover {
-  
-  color: black;
-  
-}
-h1 {
-  text-align: center;
-  background-color: inherit;
-  margin: 0;
-  padding: 20px;
-}
-
+/* Projects Section*/
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -256,6 +202,7 @@ h1 {
 }
 
 .project-image {
+  
   z-index: 1;
   height: 300px;
   width: 100%;
@@ -264,6 +211,8 @@ h1 {
   border-left: solid gray 15px;
   border-right: solid gray 15px;
 }
+
+
 
 .overlay {
   display: flex;
@@ -282,6 +231,7 @@ h1 {
 
 .project-tile:hover .overlay {
   opacity: 1;
+  
 }
 .project-description {
   text-align: center;
@@ -303,15 +253,18 @@ h1 {
 }
 .project-title:hover {
   color: black;
+  background-color:gray;
+ 
 }
 
+/* Contact Form*/
 #contact-form {
-  background-color: gray ;
+  background-color: gray;
   margin: 0 auto 50px;
   height: auto;
   width: 70%;
   max-width: 600px;
-  
+
   padding: 20px;
 }
 
@@ -336,48 +289,14 @@ h1 {
   border-color: #dbe3ec;
 }
 
-label {
-  display: flex;
-  margin-bottom: 0.5rem;
-  color: gray;
-}
-.labels{
-color:lightgray;
-}
-input{
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  text-transform: none;
-  
-}
-
-
-
-button {
-  padding: 10px;
-  font-size: 16px;
-  font-family: inherit;
-  border-color: transparent;
-  border-radius: 10px;
-  background: lightgray;
-
-  color:black;
-}
-
-button:hover {
-  border-color: black;
-  
-}
-
-button:active {
-  opacity: 50%;
-}
-
 #comments {
   height: 100px;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-transform: none;
 }
 
+/* Contact Links at bottom*/
 .contact-tile-wrapper {
   display: flex;
   justify-content: center;
@@ -394,12 +313,117 @@ button:active {
 .contact-title {
   font-family: inherit;
   font-size: smaller;
-  border-radius:1.5em;
-  padding:.2em;
+  border-radius: 1.5em;
+  padding: 0.2em;
 }
-.contact-title:hover{
-  background-color:darkgray;
+.contact-title:hover {
+  background-color: gray;
+  color:black;
 }
+
+/* Generic Elements and multi-section classes*/
+h2 {
+  margin: 3% 0 1.5% 0;
+}
+h4 {
+  margin-bottom: 3%;
+}
+
+.sub-heading {
+  border-bottom: solid gray 2px;
+  border-top: solid gray 2px;
+}
+.heading-box {
+  display: flex;
+  text-align: center;
+  background-color: inherit;
+  height: 19em;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+section {
+  display: block;
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  height: fit-content;
+}
+
+.card {
+  margin: 0.5em;
+  background-color: transparent;
+  border: none;
+  color: lightgray;
+  max-width: 900px;
+}
+.card p {
+  line-height: 2em;
+  text-indent: 30px;
+  font-size: large;
+  text-transform: lowercase;
+}
+
+.card-img-top1 {
+  width: 100%;
+  height: 100%;
+  max-height: 100px;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  color: lightgray;
+}
+
+a:hover {
+  color: black;
+}
+h1 {
+  text-align: center;
+  background-color: inherit;
+  margin: 0;
+  padding: 20px;
+}
+
+label {
+  display: flex;
+  margin-bottom: 0.5rem;
+  color: gray;
+}
+.labels {
+  color: lightgray;
+}
+input {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: none;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  border-color: transparent;
+  border-radius: 10px;
+  background: lightgray;
+
+  color: black;
+}
+
+button:hover {
+  border-color: black;
+}
+
+button:active {
+  opacity: 50%;
+}
+
+/* Media Queries*/
 @media (max-width: 1200px) {
   section {
     height: fit-content;
@@ -409,7 +433,7 @@ button:active {
 @media (max-height: 500px) {
   section {
     height: fit-content;
-    padding-top: 100px;
+    
   }
 }
 
@@ -425,7 +449,7 @@ button:active {
 
   section {
     height: fit-content;
-    padding-top: 75px;
+    
   }
 }
 
@@ -440,6 +464,6 @@ button:active {
 
   section {
     height: fit-content;
-    padding-top: 75px;
+    padding-top:40px;
   }
 }

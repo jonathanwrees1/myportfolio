@@ -42,7 +42,19 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-md">
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById('navbar').style.top = '0';
+        } else {
+          document.getElementById('navbar').style.top = '-100%';
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+    <nav class="navbar navbar-expand-md" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand mr-auto" href="#welcome-section">home</a>
 
@@ -75,8 +87,9 @@
 
     <section id="welcome-section">
       <div class="heading-box">
-        <h1 id="heading">Hello World....It's me, Jonathan!</h1>
+        <h1 id="heading">Hello World....It's me, Jonathan</h1>
       </div>
+
       <div id="pic-box">
         <img
           class="delay"
@@ -90,7 +103,7 @@
         <h4>Web Developer</h4>
       </div>
       <div id="tech-stack">
-        <div class="card" style="width: 18rem">
+        <div class="card tech" style="width: 18rem">
           <img
             src="images/html-logo.png"
             class="card-img-top1"
@@ -98,11 +111,11 @@
           />
         </div>
 
-        <div class="card" style="width: 18rem">
+        <div class="card tech" style="width: 18rem">
           <img src="images/css-logo.png" class="card-img-top1" alt="css-logo" />
         </div>
 
-        <div class="card" style="width: 18rem">
+        <div class="card tech" style="width: 18rem">
           <img
             src="images/js-logo.png"
             class="card-img-top1"
@@ -110,7 +123,7 @@
           />
         </div>
 
-        <div class="card" style="width: 18rem">
+        <div class="card tech" style="width: 18rem">
           <img
             src="images/1000px-React-icon.svg.png"
             class="card-img-top1"
@@ -118,7 +131,7 @@
           />
         </div>
 
-        <div class="card" style="width: 18rem">
+        <div class="card tech" style="width: 18rem">
           <img src="images/node.png" class="card-img-top1" alt="node-logo" />
         </div>
       </div>
