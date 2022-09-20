@@ -165,10 +165,13 @@ body::before {
 .tech {/*put the timing and duration up here*/
   display:block;
   position: relative;
-  transition: transform 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 600ms 
 }
 
-.tech:hover {/*put the action and directions here*/
+.tech:active{/*put the action and directions here*/
+  transform: rotate3d(1,1,0,-90deg);
+}
+.tech:hover{/*put the action and directions here*/
   transform: rotate3d(1,1,0,-90deg);
 }
 
