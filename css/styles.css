@@ -162,15 +162,13 @@ body::before {
   height: auto;
 }
 
-.tech {
+.tech {/*put the timing and duration up here*/
   position: relative;
-  transform-style: preserve-3d;
-  transform: translateZ(-140px);
   transition: transform 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.tech:hover {
-  transform: translateZ(-160px) rotateX(-90deg) rotateY(-90deg);
+.tech:hover {/*put the action and directions here*/
+  transform: rotateX(-90deg) rotateY(-90deg);
 }
 
 /* My Bio*/
