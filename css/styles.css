@@ -171,7 +171,7 @@ body::before {
 
 .tech:hover {
   
-  transform: rotate(180deg)
+  transform: rotate(360deg)
 }
 
 /* My Bio*/
