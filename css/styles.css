@@ -162,7 +162,7 @@ body::before {
   height: auto;
 }
 
-/*.tech{
+.tech{
   display:block;
   margin:auto;
   position: relative;
@@ -171,8 +171,8 @@ body::before {
 
 .tech:hover {
   
-  transform: rotate3d(1,0,0,-90deg);}*/
-
+  transform: rotate(180deg)
+}
 
 /* My Bio*/
 .text-wrapper {
