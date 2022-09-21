@@ -53,15 +53,6 @@
         }
         prevScrollpos = currentScrollPos;
       };
-
-      function techHover() {
-        document.getElementById('tech1').style.transitionDuration = '1s';
-        document.getElementById('tech1').style.transform =
-          'rotateY(90deg) rotateX(90deg)';
-      }
-      function techHoverOut() {
-        document.getElementById('tech1').style.transform = 'rotate(0deg)';
-      }
     </script>
     <nav class="navbar navbar-expand-md" id="navbar">
       <div class="container-fluid">
@@ -111,59 +102,50 @@
         <h2>Jonathan Rees</h2>
         <h4>Web Developer</h4>
       </div>
+
       <div id="tech-stack">
         <div class="card" style="width: 18rem">
           <img
             src="images/html-logo.png"
-            class="card-img-top1"
+            class="card-img-top1 tech"
             alt="html-logo"
             id="tech1"
-            onmouseover="techHover()"
-            onmouseout="techHoverOut()"
           />
         </div>
 
         <div class="card" style="width: 18rem">
           <img
             src="images/css-logo.png"
-            class="card-img-top1"
+            class="card-img-top1 tech"
             alt="css-logo"
             id="tech2"
-            onmouseover="techHover()"
-            onmouseout="techHoverOut()"
           />
         </div>
 
         <div class="card" style="width: 18rem">
           <img
             src="images/js-logo.png"
-            class="card-img-top1"
+            class="card-img-top1 tech"
             alt="javaScript-logo"
             id="tech3"
-            onmouseover="techHover()"
-            onmouseout="techHoverOut()"
           />
         </div>
 
         <div class="card" style="width: 18rem">
           <img
             src="images/1000px-React-icon.svg.png"
-            class="card-img-top1"
+            class="card-img-top1 tech"
             alt="react-logo"
             id="tech4"
-            onmouseover="techHover()"
-            onmouseout="techHoverOut()"
           />
         </div>
 
         <div class="card" style="width: 18rem">
           <img
             src="images/node.png"
-            class="card-img-top1"
+            class="card-img-top1 tech"
             alt="node-logo"
             id="tech5"
-            onmouseover="techHover()"
-            onmouseout="techHoverOut()"
           />
         </div>
       </div>
