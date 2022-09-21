@@ -79,14 +79,15 @@ body::before {
 
 #heading {
   background-color: inherit;
-  
-  animation-name: fade-in-h;
-  animation-duration: 1.5s;
   position: relative;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
   margin: 0 auto;
   padding: 0 auto;
+
+  /*animation-name: fade-in-h;
+  animation-duration: 1.7s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;*/
+  
 }
 
 #pic-box {
