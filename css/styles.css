@@ -75,13 +75,25 @@ body::before {
   justify-content: center;
 }
 
-
+.main-heading-box {
+  display: flex;
+  text-align: center;
+  background-color: inherit;
+  height: 14em;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-top:4em;
+  
+}
 
 #heading {
   background-color: inherit;
   position: relative;
-  margin: 0 auto;
+  margin:0 auto;
   padding: 0 auto;
+  text-align: center;
+
 
   /*animation-name: fade-in-h;
   animation-duration: 1.7s;
@@ -94,7 +106,7 @@ body::before {
   display: flex;
   width: 300px;
   height: 300px;
-  margin: 0 auto;
+  margin:0 auto ;
   padding: 0 auto;
   align-items: center;
 }
@@ -343,7 +355,7 @@ h4 {
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  
 }
 section {
   display: block;
@@ -385,12 +397,7 @@ a {
 a:hover {
   color: black;
 }
-h1 {
-  text-align: center;
-  background-color: inherit;
-  margin: 0;
-  padding: 20px;
-}
+
 
 label {
   display: flex;
@@ -455,7 +462,7 @@ button:active {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .project-image {
     width: 85%;
   }
@@ -463,9 +470,18 @@ button:active {
     width: 85%;
     height: auto;
   }
-
+  .heading-box{
+    height:10em;
+  }
+  .main-heading-box{
+    
+    height:10em;
+  }
+#welcome-section{
+  padding-top:40px;
+}
   section {
     height: fit-content;
-    padding-top:40px;
+    
   }
 }
