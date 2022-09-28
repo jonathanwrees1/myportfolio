@@ -186,14 +186,29 @@ body::before {
   
   transform: rotate(360deg)
 }
-
+.card p {
+  line-height: 2em;
+  text-indent: 30px;
+  font-size: 1.2em;
+  
+  
+}
 /* My Bio*/
 .text-wrapper {
   display: flex;
-  padding: 0 3em;
-  margin: 0 auto;
-  justify-content: center;
+  padding: 2em 3em;
+  opacity:80%;
+  margin: 0 .5em;
+  border-radius: none;
+  background-color: white;
+  justify-content: center;} 
+
+.bio{
+  color:black;
+  margin:0;
+  
 }
+
 
 /* Projects Section*/
 .projects-grid {
@@ -214,6 +229,9 @@ body::before {
   position: relative;
   border-radius: 5px;
 }
+
+
+
 
 .project-image {
   
@@ -244,6 +262,7 @@ body::before {
 }
 
 .project-tile:hover .overlay {
+  
   opacity: 1;
   
 }
@@ -268,7 +287,11 @@ body::before {
 .project-title:hover {
   color: black;
   background-color:gray;
- 
+  
+}
+.title-box:hover{
+  animation: bounce;
+  animation-duration: 500ms;
 }
 
 /* Contact Form*/
@@ -370,14 +393,9 @@ section {
   background-color: transparent;
   border: none;
   color: lightgray;
-  max-width: 900px;
+  
 }
-.card p {
-  line-height: 2em;
-  text-indent: 30px;
-  font-size: large;
-  text-transform: lowercase;
-}
+
 
 .card-img-top1 {
   width: 100%;
